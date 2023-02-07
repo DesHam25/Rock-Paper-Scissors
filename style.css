@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+header {
+  background: white;
+  padding: 25px 0;
+ 
+}
+
+header > h1 {
+  color: blueviolet;
+  font-size: 4rem;
+  
+}
+
+.score-board {
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 4px;
+  width: 250px;
+  color: white;
+  font-size: 46px;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.badge {
+  background: blueviolet;
+  counter-reset: white;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.result {
+  font-size: 50px;
+  color: white;
+}
+
+.result > p {
+  font-weight: bold;
+}
+
+.choices {
+  margin-top: 50px;
+}
+.choice {
+  border: 10px solid white;
+  border-radius: 50%;
+  margin: 10px 20px;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: blueviolet;
+}
+
+#action-message {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.green-glow{
+  border: 10px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow{
+  border: 10px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
+}
+.blue-glow{
+  border: 10px solid #002fff;
+  box-shadow: 0 0 10px #011066d5;
+}
